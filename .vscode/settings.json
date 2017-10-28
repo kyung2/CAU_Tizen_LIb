@@ -1,0 +1,25 @@
+{
+    "files.associations": {
+        "vector": "cpp",
+        "iosfwd": "cpp",
+        "sstream": "cpp",
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cwchar": "cpp",
+        "exception": "cpp",
+        "initializer_list": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "new": "cpp",
+        "ostream": "cpp",
+        "streambuf": "cpp",
+        "type_traits": "cpp",
+        "xstring": "cpp",
+        "string": "cpp",
+        "xutility": "cpp"
+    }
+}

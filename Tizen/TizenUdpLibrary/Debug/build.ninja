@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+ninja_required_version = 1.5
+include rules.ninja
+include target.ninja
+
+shell = cmd /c
+bashshell = C:\tizen-studio\tools\msys2\usr\bin\sh.exe
+builddir = ../Debug
+sareportdir = ../SA_Report
+sa_checkers = alpha,cplusplus,core,deadcode,resourceLeak,security,unix
+coveragedir = ../Coverage_Report
+
+subninja ../Debug/src/subdir.ninja
+
+targettool = arm-linux-gnueabi-ar.exe
+targetflags =  -r
+
+build libtizenudplibrary.a: build_target src/tizenudplibrary.o 
+build ast: phony src/tizenudplibrary.o.ast
+build externalFnMap.txt: fast_ext_fn src/tizenudplibrary.o.ast
+build sa: phony $sareportdir/src/tizenudplibrary.o.xml
+build apichecker: unusedapi_rule src/tizenudplibrary.o.txt
+build cov: cov_report $coveragedir/src/tizenudplibrary.o.cov
+
